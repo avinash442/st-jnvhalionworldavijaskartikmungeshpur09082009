@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Selection Form - JNV Mungeshpur</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBPT3QQM2E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-NBPT3QQM2E');
+    </script>
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <header>
+            <h1>Stream Selection After Class 10th</h1>
+            <p>Welcome to the Stream Selection Form for JNV Mungeshpur Students. Please provide your details.</p>
+        </header>
+
+        <!-- Form starts here -->
+        <form id="streamForm">
+            <div class="form-section">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-section">
+                <label for="stream">Select Your Stream:</label>
+                <select id="stream" name="stream" required>
+                    <option value="PCM">PCM (Physics, Chemistry, Maths)</option>
+                    <option value="PCB">PCB (Physics, Chemistry, Biology)</option>
+                    <option value="PCMB">PCMB (Physics, Chemistry, Maths, Biology)</option>
+                    <option value="COMMERCE">Commerce</option>
+                    <option value="ARTS">Arts</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <label for="takingTC">Are you taking TC (Transfer Certificate)?</label><br>
+                <input type="radio" id="yes" name="takingTC" value="Yes" required> Yes
+                <input type="radio" id="no" name="takingTC" value="No" required> No
+            </div>
+
+            <div class="form-section">
+                <label for="guidance">Your Guidance for Classmates:</label>
+                <textarea id="guidance" name="guidance" rows="4" placeholder="Share your thoughts or advice with your classmates." required></textarea>
+            </div>
+
+            <div class="form-section">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+
+        <div id="formResponse" class="response" style="display:none;">
+            <h2>Thank you for your submission!</h2>
+            <p>We appreciate your feedback. Stay motivated!</p>
+        </div>
+    </div>
+
+    <!-- Link to External JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
